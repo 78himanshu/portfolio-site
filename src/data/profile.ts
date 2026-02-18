@@ -63,9 +63,9 @@ export const profile = {
       role: "Machine Learning Intern",
       dates: "Jan 2024 - Apr 2024",
       bullets: [
-        "Worked with Microsoft Azure Vision Studio to prototype Vision AI workflows.",
-        "Built ML models for spatial analysis and speech recognition using PyTorch.",
-        "Explored M365 and Microsoft’s generative AI tooling for internal experimentation."
+        "Prototyped end-to-end computer vision workflows in Microsoft Azure Vision Studio, evaluating detection/classification/OCR pipelines and iterating on data preprocessing and configuration to improve accuracy and robustness for real-world inputs.",
+        "Developed and trained PyTorch-based models for spatial analysis and speech recognition, performing dataset preparation, feature engineering, and hyperparameter tuning, and reporting performance using standard validation metrics to ensure reliable model behavior.",
+        "Conducted internal experimentation with Microsoft 365 and Microsoft’s generative AI tooling to explore multimodal use cases (vision + text), documenting findings and recommendations to accelerate downstream prototyping and stakeholder adoption."
       ]
     },
     {
