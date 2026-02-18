@@ -11,6 +11,7 @@ export async function GET() {
       "Content-Type": "application/pdf",
       "Content-Disposition": 'attachment; filename="resume.pdf"',
       "Cache-Control": "no-store",
+      "Pragma": "no-cache",
     },
   });
 }
