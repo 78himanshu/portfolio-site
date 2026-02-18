@@ -40,7 +40,7 @@ export default function HomePage() {
                 Email Me
               </Link>
               <a
-                href="/resume.pdf"
+                href="/api/resume"
                 download="resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
