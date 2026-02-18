@@ -40,10 +40,7 @@ export default function HomePage() {
                 Email Me
               </Link>
               <a
-                href="/resume.pdf"
-                download="resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/api/resume"
                 className="rounded-full border border-slate-200/70 px-6 py-3 text-sm font-semibold text-slate-600 transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-900 dark:border-slate-800/70 dark:text-slate-300 dark:hover:border-slate-600 dark:hover:text-white"
               >
                 Download Resume
