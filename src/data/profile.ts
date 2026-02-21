@@ -15,7 +15,7 @@ export const profile = {
   },
   highlights: [
     {
-      title: "300,000+ names standardized",
+      title: "300,000+ customer names standardized",
       description: "Deployed an NLP + fuzzy matching pipeline to improve entity resolution reliability."
     },
     {
@@ -27,8 +27,8 @@ export const profile = {
       description: "Built Kafka-to-S3 ingestion with Airflow and Redshift for analytics."
     },
     {
-      title: "F1 score to 90%",
-      description: "Optimized ML models with feature engineering and tuning."
+      title: "Automated PySpark data validation framework ",
+      description: "Automated ETL reconciliation and migration"
     }
   ],
   skills: {
