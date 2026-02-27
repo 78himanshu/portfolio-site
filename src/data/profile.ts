@@ -13,8 +13,8 @@ export const profile = {
   location: "New York City Metropolitan Area",
   summary:
     "Data scientist and data engineer focused on scalable ML systems, analytics reliability, and production-grade pipelines.",
-  aboutLong:
-    "I build data products that combine rigorous analytics with production-ready engineering. My work spans machine learning, NLP, and distributed data processing—usually at the intersection of model performance and data quality. I enjoy designing pipelines that are resilient, observable, and easy for cross-functional teams to use.\n\nI thrive in environments where I can take ambiguous problems, translate them into measurable outcomes, and ship solutions that last. My interests include recommender systems, entity resolution, and MLOps for continuous improvement. Outside of work, I like exploring new datasets, writing small tools to speed up analysis, and contributing to data community meetups.",
+    aboutLong:
+    "I build end-to-end data products that combine strong analytics with production-ready engineering. My work spans ML/NLP, information retrieval (RAG), and scalable data pipelines—usually focused on turning messy, high-volume data into systems that are reliable, measurable, and easy for teams to trust.\n\nI like taking ambiguous problems, defining the right metrics, and shipping solutions that hold up in real use: robust validation, clear logging, and pragmatic automation. Recently I’ve been working on document parsing and vector search workflows, real-time computer vision projects, and full-stack applications that bring data-driven features to users.\n\nI’m especially interested in retrieval systems, entity resolution, and MLOps practices that improve models continuously as data changes. Outside of work, I enjoy exploring new datasets, building small tools that speed up analysis, and learning by shipping projects end-to-end.",
   photo: "/profile-placeholder.png",
   resumeUrl: "/resume.pdf",
   socials: {
