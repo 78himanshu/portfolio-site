@@ -33,7 +33,7 @@ export default function ProjectsClient() {
         <div className="flex flex-wrap items-start justify-between gap-4">
           <PageHeader
             title="Projects"
-            subtitle="A curated set of placeholder projects that highlight data science and engineering themes."
+            subtitle="Builds I have shipped across data engineering, ML, and full-stack—click a project to see details, stack, and code."
           />
           <Link
             className="link-muted text-sm font-semibold"
