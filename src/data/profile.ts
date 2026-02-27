@@ -1,3 +1,11 @@
+export type Project = {
+  title: string;
+  description: string;
+  highlights?: string[];
+  stack: string[];
+  github?: string;
+};
+
 export const profile = {
   name: "Himanshu Paithane",
   title: "Data Scientist & Data Engineer",
@@ -104,44 +112,97 @@ export const profile = {
   ],
   projects: [
     {
-      title: "Entity Resolution Pipeline",
+      title: "VectorSearch RAG (MongoDB)",
       description:
-        "Placeholder project: an end-to-end name matching system that blends fuzzy logic with learned embeddings for reliable identity resolution.",
-      stack: ["PySpark", "Databricks", "NLP", "Azure"],
-      github: "https://github.com/aarav-mehta/entity-resolution",
-      demo: "https://example.com/entity-resolution"
+        "Built an end-to-end RAG retrieval pipeline: chunked PDFs, generated local sentence-transformer embeddings, stored vectors + metadata in MongoDB Atlas, and queried top-k matches via MongoDB Vector Search.",
+      highlights: [
+        "Built an end-to-end RAG retrieval pipeline by chunking PDFs, generating local sentence-transformer embeddings, and storing vectors + metadata in MongoDB Atlas.",
+        "Implemented MongoDB Vector Search indexing and $vectorSearch queries to retrieve top-k semantically similar chunks with tuned candidate limits.",
+        "Automated ingestion + retrieval in a reproducible Python/uv workflow with env-based secrets management, enabling retrieval-grounded (RAG) responses and secure, repeatable experimentation."
+      ],
+      stack: [
+        "Python",
+        "MongoDB Atlas",
+        "Vector Search",
+        "LangChain",
+        "Sentence-Transformers",
+        "PyMongo"
+      ],
+      github: "https://github.com/<YOUR_GITHUB_USERNAME>/vectorsearch-rag-mongodb"
     },
     {
-      title: "Anomaly Detection for IoT Streams",
+      title: "Multimodal Document Parsing Pipeline",
       description:
-        "Placeholder project: streaming anomaly detection on sensor telemetry with adaptive thresholds and alert routing.",
-      stack: ["Kafka", "Python", "Airflow", "Grafana"],
-      github: "https://github.com/aarav-mehta/iot-anomaly",
-      demo: "https://example.com/iot-anomaly"
+        "Built an LLM-based PDF table extraction pipeline using the OpenAI Responses API (vision) to produce structured records with JSON schema + Pydantic validation and export clean CSVs with repeatability checks.",
+      highlights: [
+        "Built an LLM-based document extraction pipeline using the OpenAI Responses API (vision) to convert PDF tables into structured records and export clean CSVs for downstream analytics.",
+        "Iterated prompt + schema design (JSON schema + Pydantic validation) to improve extraction accuracy and consistency for classification tasks.",
+        "Added repeatability and error-checking via multi-run consistency tests (hash comparisons) to reduce variance and surface edge cases for targeted fixes."
+      ],
+      stack: ["Python", "OpenAI Responses API", "Vision", "PyMuPDF", "Pydantic"],
+      github:
+        "https://github.com/<YOUR_GITHUB_USERNAME>/multimodal-document-parsing-pipeline"
     },
     {
-      title: "Recommendation Engine",
+      title: "AlertVision (Drowsiness Detection)",
       description:
-        "Placeholder project: hybrid recommender combining collaborative filtering with content-based signals for personalization.",
-      stack: ["Python", "scikit-learn", "Redis", "FastAPI"],
-      github: "https://github.com/aarav-mehta/recommender",
-      demo: "https://example.com/recommender"
+        "Fine-tuned YOLO for high-accuracy face/eye/head-position detection and used OpenCV for real-time video inference to identify drowsiness in safety-critical scenarios.",
+      highlights: [
+        "Fine-tuned YOLO for high-accuracy detection of face, eyes, and head position to identify drowsiness.",
+        "Leveraged OpenCV (cv2) for real-time video input, image capture, and preprocessing for the detection model.",
+        "Trained and deployed a deep learning model (YOLO, PyTorch) on captured images for real-time drowsiness detection; applied reinforcement-learning techniques to improve decision-making accuracy in safety-critical use cases."
+      ],
+      stack: ["YOLO", "PyTorch", "OpenCV", "Computer Vision"],
+      github: "https://github.com/<YOUR_GITHUB_USERNAME>/alertvision"
     },
     {
-      title: "Product Analytics Dashboard",
+      title: "FindMySquad (Full-Stack Platform)",
       description:
-        "Placeholder project: curated product engagement metrics with automated ETL and BI-ready datasets.",
-      stack: ["BigQuery", "dbt", "Power BI", "GA4"],
-      github: "https://github.com/aarav-mehta/analytics-dashboard",
-      demo: "https://example.com/analytics-dashboard"
+        "Developed a full-stack web platform for hosting/joining games, finding gym buddies, and esports tournaments with real-time chat, reminders, maps, and engagement systems (karma, achievements, ratings).",
+      highlights: [
+        "Developed and deployed a full-stack web platform (Node.js, Express.js, MongoDB, Handlebars, CSS, JavaScript) for hosting/joining games, finding gym buddies, and organizing esports tournaments.",
+        "Integrated real-time chat (WebSockets), email reminders (Nodemailer + Cron), and interactive maps (Leaflet.js) to enhance collaboration and event coordination.",
+        "Designed user engagement systems (profiles, ratings, karma leaderboard, achievements) to boost retention and fair play."
+      ],
+      stack: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Handlebars",
+        "WebSockets",
+        "Leaflet.js",
+        "Nodemailer",
+        "Cron"
+      ],
+      github: "https://github.com/<YOUR_GITHUB_USERNAME>/findmysquad"
     },
     {
-      title: "Affluence Scoring Service",
+      title: "YOLO + OpenCV Road Signs Detection",
       description:
-        "Placeholder project: ML scoring API to classify user spending affinity for marketing workflows.",
-      stack: ["LightGBM", "MLflow", "Docker", "AWS"],
-      github: "https://github.com/aarav-mehta/affluence-scoring",
-      demo: "https://example.com/affluence-scoring"
+        "Built a real-time road sign detection pipeline using YOLOv5 + OpenCV with a custom Pascal VOC → YOLO dataset workflow, reproducible training config, and deployed best weights for live inference.",
+      highlights: [
+        "Built an end-to-end real-time road sign detection pipeline using YOLOv5 (PyTorch) + OpenCV, running inference on live video streams and rendering labeled bounding boxes for 4 classes (traffic light, speed limit, crosswalk, stop).",
+        "Created and operationalized a custom Pascal VOC dataset workflow: curated labels, defined the class map, and converted VOC XML annotations into YOLO-format labels, generating the dataset config (customVOC.yaml) for reproducible training.",
+        "Implemented a preprocessing/training data engine (preprocessingRoadSigns.py) that performs image resizing and augmentations, then splits data into train/val sets; enforced consistent input size (img=320) for training/inference parity.",
+        "Fine-tuned YOLOv5 using transfer learning (pretrained weights) and managed the full training loop configuration (batch=16, epochs=50), tracking detection quality via mAP and loss curves; deployed the \"best.pt\" weights for inference."
+      ],
+      stack: ["YOLOv5", "PyTorch", "OpenCV", "Computer Vision", "Pascal VOC"],
+      github:
+        "https://github.com/<YOUR_GITHUB_USERNAME>/yolo-opencv-road-signs-detection-model"
+    },
+    {
+      title: "CNN Human Activity Recognition (UCI HAR)",
+      description:
+        "Built a 1D-CNN time-series classifier for smartphone accelerometer/gyroscope windows across 6 activities; implemented full preprocessing and achieved 93.7% test accuracy with robust evaluation.",
+      highlights: [
+        "Developed a CNN-based Human Activity Recognition system using the UCI HAR smartphone dataset (accelerometer + gyroscope), converting raw multivariate sensor streams into fixed-length time windows across 6 activity classes.",
+        "Built a 1D-CNN time-series architecture (Conv1D + max-pooling + dropout + dense + softmax) to learn motion features directly from sensor signals and outperform traditional baselines (e.g., SVM/KNN).",
+        "Implemented a full preprocessing pipeline: normalized channels, segmented continuous readings into uniform intervals, and reshaped inputs into 3D tensors (samples x timesteps x channels) for CNN training.",
+        "Trained and tuned the model using categorical cross-entropy with Adam; evaluated with confusion matrix + precision/recall/F1; achieved 93.7% test accuracy."
+      ],
+      stack: ["Python", "Deep Learning", "1D-CNN", "Time Series", "UCI HAR"],
+      github:
+        "https://github.com/<YOUR_GITHUB_USERNAME>/cnn-human-activity-recognition-uci-har"
     }
   ]
 };
