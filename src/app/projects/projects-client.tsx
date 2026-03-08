@@ -37,7 +37,7 @@ export default function ProjectsClient() {
           />
           <Link
             className="link-muted text-sm font-semibold"
-            href="https://github.com/<YOUR_GITHUB_USERNAME>"
+            href="https://github.com/78himanshu"
             target="_blank"
             rel="noopener noreferrer"
           >

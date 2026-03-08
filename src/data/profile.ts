@@ -128,7 +128,7 @@ export const profile = {
         "Sentence-Transformers",
         "PyMongo"
       ],
-      github: "https://github.com/<YOUR_GITHUB_USERNAME>/vectorsearch-rag-mongodb"
+      github: "https://github.com/78himanshu/RAG-pipeline-with-MongoDB-vector-search.git"
     },
     {
       title: "Multimodal Document Parsing Pipeline",
@@ -141,7 +141,7 @@ export const profile = {
       ],
       stack: ["Python", "OpenAI Responses API", "Vision", "PyMuPDF", "Pydantic"],
       github:
-        "https://github.com/<YOUR_GITHUB_USERNAME>/multimodal-document-parsing-pipeline"
+        "https://github.com/78himanshu/Multimodal-Document-Parsing-Pipeline.git"
     },
     {
       title: "AlertVision (Drowsiness Detection)",
@@ -153,7 +153,7 @@ export const profile = {
         "Trained and deployed a deep learning model (YOLO, PyTorch) on captured images for real-time drowsiness detection; applied reinforcement-learning techniques to improve decision-making accuracy in safety-critical use cases."
       ],
       stack: ["YOLO", "PyTorch", "OpenCV", "Computer Vision"],
-      github: "https://github.com/<YOUR_GITHUB_USERNAME>/alertvision"
+      github: "https://github.com/78himanshu/Wake-Bot.git"
     },
     {
       title: "FindMySquad (Full-Stack Platform)",
@@ -174,7 +174,7 @@ export const profile = {
         "Nodemailer",
         "Cron"
       ],
-      github: "https://github.com/<YOUR_GITHUB_USERNAME>/findmysquad"
+      github: "https://github.com/78himanshu/FindMySquad.git"
     },
     {
       title: "YOLO + OpenCV Road Signs Detection",
@@ -188,7 +188,7 @@ export const profile = {
       ],
       stack: ["YOLOv5", "PyTorch", "OpenCV", "Computer Vision", "Pascal VOC"],
       github:
-        "https://github.com/<YOUR_GITHUB_USERNAME>/yolo-opencv-road-signs-detection-model"
+        "https://github.com/78himanshu/YOLO-plus-OpenCV-Road-Signs-Detection-Model.git"
     },
     {
       title: "CNN Human Activity Recognition (UCI HAR)",
@@ -202,7 +202,7 @@ export const profile = {
       ],
       stack: ["Python", "Deep Learning", "1D-CNN", "Time Series", "UCI HAR"],
       github:
-        "https://github.com/<YOUR_GITHUB_USERNAME>/cnn-human-activity-recognition-uci-har"
+        "https://github.com/78himanshu/CNN-for-Human-Activity-Recognition-using-Mobile-Phone-Sensors.git"
     }
   ]
 };
