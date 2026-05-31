@@ -136,11 +136,13 @@ export const profile = {
     {
       degree: "Master of Science in Computer Science",
       school: "Stevens Institute of Technology",
+      logo: "/education-logos/stevens-placeholder.png",
       details: "(3.9/4) - 2026"
     },
     {
       degree: "B.Tech in Computers and Communication Engineering",
       school: "Manipal University Jaipur",
+      logo: "/education-logos/manipal-placeholder.png",
       details: "2024",
       subtext: "Specialization in Data Science"
     }
