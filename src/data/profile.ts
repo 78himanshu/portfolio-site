@@ -78,7 +78,8 @@ export const profile = {
   experience: [
     {
       company: "PANASONIC NORTH AMERICA",
-      role: "Data Engineer",
+      logo: "/company-logos/panasonic-placeholder.png",
+      role: "Data Engineer - ML",
       dates: "May 2025 – Present",
       bullets: [
         "Developed and deployed a Databricks (PySpark) pipeline to transform and standardize 300,000+ customer names using NLP + fuzzy matching, ranking candidate matches to improve downstream analytics reliability and reduce false matches.",
@@ -88,6 +89,7 @@ export const profile = {
     },
     {
       company: "JAR",
+      logo: "/company-logos/jar-placeholder.png",
       role: "Data Scientist",
       dates: "Mar 2024 – Aug 2024",
       bullets: [
@@ -98,6 +100,7 @@ export const profile = {
     },
     {
       company: "SHARP",
+      logo: "/company-logos/sharp-placeholder.png",
       role: "Machine Learning Intern",
       dates: "Jan 2024 - Apr 2024",
       bullets: [
@@ -108,6 +111,7 @@ export const profile = {
     },
     {
       company: "SYMPHONY AI",
+      logo: "/company-logos/symphonyai-placeholder.png",
       role: "Data Science Intern",
       dates: "May 2023 – Aug 2023",
       bullets: [
@@ -118,6 +122,7 @@ export const profile = {
     },
     {
       company: "SHARP",
+      logo: "/company-logos/sharp-placeholder.png",
       role: "Data Science Intern",
       dates: "Jun 2021 – Sept 2021",
       bullets: [
