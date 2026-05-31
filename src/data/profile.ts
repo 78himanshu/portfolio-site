@@ -12,11 +12,10 @@ export const profile = {
   email: "hpaithan@stevens.edu",
   location: "New York City Metropolitan Area",
   summary:
-    "Data scientist and data engineer focused on scalable ML systems, analytics reliability, and production-grade pipelines.",
+  "I build data and AI systems that turn messy, high-volume information into reliable pipelines, measurable insights, and retrieval-powered applications.",
 
   aboutLong:
-    "I build end-to-end data products that combine strong analytics with production-ready engineering. My work spans ML/NLP, information retrieval (RAG), and scalable data pipelines—usually focused on turning messy, high-volume data into systems that are reliable, measurable, and easy for teams to trust. \n\nI like taking ambiguous problems, defining the right metrics, and shipping solutions that hold up in real use: robust validation, clear logging, and pragmatic automation. Recently I’ve been working on document parsing and vector search workflows, real-time computer vision projects, and full-stack applications that bring data-driven features to users.  \n\nI’m especially interested in retrieval systems, entity resolution, and MLOps practices that improve models continuously as data changes. Outside of work, I like spending some time on the weekends on the Hudson kayaking, playing tennis is the weather is nice and playing amateur soccer tournaments.",
-
+  "I build end-to-end data and AI systems that combine production-ready data engineering with applied machine learning, retrieval, and LLM-powered workflows. My work spans PySpark pipelines, data validation frameworks, NLP-driven entity resolution, RAG systems, vector search, agentic AI, MCP tools, and financial document intelligence.\n\nI like taking ambiguous problems, defining the right metrics, and shipping systems that are reliable, measurable, and easy for teams to trust. Recently, I’ve been focused on agentic RAG workflows, OpenAI function calling, ChromaDB/LangChain retrieval pipelines, Kaiko market data agents, local LLM document extraction, and scalable analytics workflows across Databricks, BigQuery, and Power BI.\n\nI’m especially interested in building AI/data systems that connect reliable data infrastructure with intelligent applications — systems that can retrieve, reason, validate, and support real decision-making. Outside of work, I enjoy kayaking on the Hudson, playing tennis when the weather is nice, and joining amateur soccer tournaments.",
   photo: "/profile-placeholder.png",
   resumeUrl: "/resume.pdf",
   socials: {
@@ -42,10 +41,39 @@ export const profile = {
     }
   ],
   skills: {
-    Languages: ["Python", "SQL", "Java", "JavaScript"],
-    "Data/ML": ["PySpark", "Pandas", "scikit-learn", "PyTorch", "TensorFlow", "MLflow"],
-    "Data Engineering": ["Airflow", "Kafka", "BigQuery", "Redshift", "MongoDB"],
-    "Cloud/BI": ["GCP", "Azure", "Power BI", "Databricks"]
+    Languages: ["Python", "SQL", "R", "Java", "JavaScript", "C++"],
+    "AI/LLM": [
+      "RAG",
+      "Agentic AI",
+      "OpenAI",
+      "LangChain",
+      "ChromaDB",
+      "MCP",
+      "Hugging Face",
+      "Vector Search",
+      "Prompt Engineering"
+    ],
+    "Data/ML": [
+      "scikit-learn",
+      "XGBoost",
+      "LightGBM",
+      "PyTorch",
+      "TensorFlow",
+      "NLP",
+      "Time Series",
+      "Model Evaluation"
+    ],
+    "Data Engineering": [
+      "PySpark",
+      "Databricks",
+      "Kafka",
+      "Airflow",
+      "BigQuery",
+      "MongoDB",
+      "Data Validation",
+      "ETL/ELT"
+    ],
+    "Cloud/BI": ["AWS S3", "GCP", "Microsoft Fabric", "Power BI", "Tableau"]
   },
   experience: [
     {
@@ -319,7 +347,6 @@ export const profile = {
 
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Experience", href: "/experience" },
   { label: "Projects", href: "/projects" },
   { label: "Education", href: "/education" },
