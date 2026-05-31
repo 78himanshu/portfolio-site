@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PageHeader from "@/components/page-header";
 import Card from "@/components/card";
 import { profile } from "@/data/profile";
@@ -14,21 +15,39 @@ export default function EducationPage() {
           title="Education"
           subtitle="Academic foundation focused on computer science, data systems, and applied analytics."
         />
+
         <div className="space-y-6">
           {profile.education.map((item) => (
             <Card key={item.degree}>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-                {item.school}
-              </p>
-              <h3 className="mt-2 font-display text-xl font-semibold">
-                {item.degree}
-              </h3>
-              <p className="mt-2 text-sm font-semibold text-slate-600 dark:text-slate-300">
-                {item.details}
-              </p>
-              {item.subtext ? (
-                <p className="mt-2 text-sm text-muted">{item.subtext}</p>
-              ) : null}
+              <div className="space-y-4">
+                {"logo" in item && item.logo ? (
+                  <Image
+                    src={item.logo}
+                    alt={item.school}
+                    width={96}
+                    height={96}
+                    className="rounded-md object-contain"
+                  />
+                ) : null}
+
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                    {item.school}
+                  </p>
+
+                  <h3 className="mt-2 font-display text-xl font-semibold">
+                    {item.degree}
+                  </h3>
+
+                  <p className="mt-2 text-sm font-semibold text-slate-600 dark:text-slate-300">
+                    {item.details}
+                  </p>
+
+                  {item.subtext ? (
+                    <p className="mt-2 text-sm text-muted">{item.subtext}</p>
+                  ) : null}
+                </div>
+              </div>
             </Card>
           ))}
         </div>

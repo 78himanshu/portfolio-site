@@ -12,11 +12,10 @@ export const profile = {
   email: "hpaithan@stevens.edu",
   location: "New York City Metropolitan Area",
   summary:
-    "Data scientist and data engineer focused on scalable ML systems, analytics reliability, and production-grade pipelines.",
+  "I build data and AI systems that turn messy, high-volume information into reliable pipelines, measurable insights, and retrieval-powered applications.",
 
   aboutLong:
-    "I build end-to-end data products that combine strong analytics with production-ready engineering. My work spans ML/NLP, information retrieval (RAG), and scalable data pipelines—usually focused on turning messy, high-volume data into systems that are reliable, measurable, and easy for teams to trust. \n\nI like taking ambiguous problems, defining the right metrics, and shipping solutions that hold up in real use: robust validation, clear logging, and pragmatic automation. Recently I’ve been working on document parsing and vector search workflows, real-time computer vision projects, and full-stack applications that bring data-driven features to users.  \n\nI’m especially interested in retrieval systems, entity resolution, and MLOps practices that improve models continuously as data changes. Outside of work, I like spending some time on the weekends on the Hudson kayaking, playing tennis is the weather is nice and playing amateur soccer tournaments.",
-
+  "I build end-to-end data and AI systems that combine production-ready data engineering with applied machine learning, retrieval, and LLM-powered workflows. My work spans PySpark pipelines, data validation frameworks, NLP-driven entity resolution, RAG systems, vector search, agentic AI, MCP tools, and financial document intelligence.\n\nI like taking ambiguous problems, defining the right metrics, and shipping systems that are reliable, measurable, and easy for teams to trust. Recently, I’ve been focused on agentic RAG workflows, OpenAI function calling, ChromaDB/LangChain retrieval pipelines, Kaiko market data agents, local LLM document extraction, and scalable analytics workflows across Databricks, BigQuery, and Power BI.\n\nI’m especially interested in building AI/data systems that connect reliable data infrastructure with intelligent applications — systems that can retrieve, reason, validate, and support real decision-making. Outside of work, I enjoy kayaking on the Hudson, playing tennis when the weather is nice, and joining amateur soccer tournaments.",
   photo: "/profile-placeholder.png",
   resumeUrl: "/resume.pdf",
   socials: {
@@ -42,15 +41,45 @@ export const profile = {
     }
   ],
   skills: {
-    Languages: ["Python", "SQL", "Java", "JavaScript"],
-    "Data/ML": ["PySpark", "Pandas", "scikit-learn", "PyTorch", "TensorFlow", "MLflow"],
-    "Data Engineering": ["Airflow", "Kafka", "BigQuery", "Redshift", "MongoDB"],
-    "Cloud/BI": ["GCP", "Azure", "Power BI", "Databricks"]
+    Languages: ["Python", "SQL", "R", "Java", "JavaScript", "C++"],
+    "AI/LLM": [
+      "RAG",
+      "Agentic AI",
+      "OpenAI",
+      "LangChain",
+      "ChromaDB",
+      "MCP",
+      "Hugging Face",
+      "Vector Search",
+      "Prompt Engineering"
+    ],
+    "Data/ML": [
+      "scikit-learn",
+      "XGBoost",
+      "LightGBM",
+      "PyTorch",
+      "TensorFlow",
+      "NLP",
+      "Time Series",
+      "Model Evaluation"
+    ],
+    "Data Engineering": [
+      "PySpark",
+      "Databricks",
+      "Kafka",
+      "Airflow",
+      "BigQuery",
+      "MongoDB",
+      "Data Validation",
+      "ETL/ELT"
+    ],
+    "Cloud/BI": ["AWS S3", "GCP", "Microsoft Fabric", "Power BI", "Tableau"]
   },
   experience: [
     {
       company: "PANASONIC NORTH AMERICA",
-      role: "Data Engineer",
+      logo: "/company-logos/panasonic-placeholder.png",
+      role: "Data Engineer - ML",
       dates: "May 2025 – Present",
       bullets: [
         "Developed and deployed a Databricks (PySpark) pipeline to transform and standardize 300,000+ customer names using NLP + fuzzy matching, ranking candidate matches to improve downstream analytics reliability and reduce false matches.",
@@ -60,6 +89,7 @@ export const profile = {
     },
     {
       company: "JAR",
+      logo: "/company-logos/jar-placeholder.png",
       role: "Data Scientist",
       dates: "Mar 2024 – Aug 2024",
       bullets: [
@@ -70,6 +100,7 @@ export const profile = {
     },
     {
       company: "SHARP",
+      logo: "/company-logos/sharp-placeholder.png",
       role: "Machine Learning Intern",
       dates: "Jan 2024 - Apr 2024",
       bullets: [
@@ -80,6 +111,7 @@ export const profile = {
     },
     {
       company: "SYMPHONY AI",
+      logo: "/company-logos/symphonyai-placeholder.png",
       role: "Data Science Intern",
       dates: "May 2023 – Aug 2023",
       bullets: [
@@ -90,6 +122,7 @@ export const profile = {
     },
     {
       company: "SHARP",
+      logo: "/company-logos/sharp-placeholder.png",
       role: "Data Science Intern",
       dates: "Jun 2021 – Sept 2021",
       bullets: [
@@ -103,16 +136,126 @@ export const profile = {
     {
       degree: "Master of Science in Computer Science",
       school: "Stevens Institute of Technology",
+      logo: "/education-logos/stevens-placeholder.png",
       details: "(3.9/4) - 2026"
     },
     {
       degree: "B.Tech in Computers and Communication Engineering",
       school: "Manipal University Jaipur",
+      logo: "/education-logos/manipal-placeholder.png",
       details: "2024",
       subtext: "Specialization in Data Science"
     }
   ],
   projects: [
+    {
+      title: "AgenticRAG",
+      description:
+        "Built an agentic RAG system using OpenAI function calling, local vector retrieval, and multiple retrieval tools to answer Python programming questions with grounded context.",
+      highlights: [
+        "Implemented an agentic workflow where the model selects retrieval tools before generating a final answer.",
+        "Built a local vector knowledge base from Python documentation using token-based chunking and OpenAI embeddings.",
+        "Designed multi-tool retrieval logic combining semantic search, documentation lookup, and context-focused retrieval."
+      ],
+      stack: ["Python", "OpenAI Function Calling", "RAG", "Vector Search", "Embeddings", "Tiktoken"],
+      github: "https://github.com/78himanshu/AgenticRAG.git"
+    },
+    {
+      title: "TicketSense-AI",
+      description:
+        "Built a LangChain + ChromaDB ticket classification system comparing OpenAI embeddings and Hugging Face EmbeddingGemma-300M across zero-shot, KNN, and few-shot strategies.",
+      highlights: [
+        "Created parallel Chroma vector stores using OpenAI embeddings and local Hugging Face EmbeddingGemma-300M embeddings.",
+        "Implemented zero-shot, KNN, and few-shot classification workflows for support ticket categorization.",
+        "Evaluated classification performance using precision, recall, F1-score, and classification reports."
+      ],
+      stack: ["Python", "LangChain", "ChromaDB", "Hugging Face", "OpenAI", "Scikit-learn"],
+      github: "https://github.com/78himanshu/TicketSense-AI.git"
+    },
+    {
+      title: "KaikoData-Agent",
+      description:
+        "Built an agentic market data downloader that converts natural-language trading data requests into Kaiko Market Data API CSV/JSON downloads.",
+      highlights: [
+        "Used OpenAI function calling to convert natural-language market data requests into structured API parameters.",
+        "Integrated Kaiko Market Data API endpoints for OHLCV aggregation data and tick-level trade data.",
+        "Exported downloaded market data into JSON and CSV files for quantitative analysis workflows."
+      ],
+      stack: ["Python", "OpenAI Function Calling", "Kaiko API", "Requests", "CSV", "JSON"],
+      github: "https://github.com/78himanshu/KaikoData-Agent.git"
+    },
+    {
+      title: "MarketMCP-Agent",
+      description:
+        "Implemented an MCP-powered financial data assistant using FastMCP and Kaiko Reference Data APIs to answer questions about exchanges, instruments, and market data availability.",
+      highlights: [
+        "Built a FastMCP server that exposes Kaiko Reference Data API endpoints as agent-usable tools.",
+        "Implemented an AI agent that queries MCP tools to answer natural-language financial data availability questions.",
+        "Designed the workflow for autonomous trading data discovery and market metadata lookup."
+      ],
+      stack: ["Python", "FastMCP", "MCP", "OpenAI", "Kaiko API", "Requests"],
+      github: "https://github.com/78himanshu/MarketMCP-Agent.git"
+    },
+    {
+      title: "DocRouteAI",
+      description:
+        "Built an LLM-powered file routing pipeline that classifies PDFs, CSVs, text files, and Python scripts, then routes them to extraction, summarization, copying, or execution workflows.",
+      highlights: [
+        "Used OpenAI tool calling to classify incoming files and select the correct processing action.",
+        "Implemented PDF table extraction, LSEG document summarization, CSV copying, and Python script execution logging.",
+        "Designed deterministic validation checks around LLM routing decisions for safer document automation."
+      ],
+      stack: ["Python", "OpenAI Tool Calling", "PyMuPDF", "PyPDF2", "Document AI", "CSV"],
+      github: "https://github.com/78himanshu/DocRouteAI.git"
+    },
+    {
+      title: "LocalDocForge",
+      description:
+        "Built a local LLM document extraction pipeline using an OpenAI-compatible inference server to convert I/B/E/S PDF tables into structured CSV outputs.",
+      highlights: [
+        "Used local inference through an OpenAI-compatible API endpoint without relying on the OpenAI Python SDK.",
+        "Extracted PDF table text with PyMuPDF and converted financial documentation layouts into structured CSV records.",
+        "Designed a privacy-conscious local AI workflow for financial document intelligence and schema extraction."
+      ],
+      stack: ["Python", "Local LLM", "OpenAI-Compatible API", "PyMuPDF", "Requests", "CSV"],
+      github: "https://github.com/78himanshu/LocalDocForge.git"
+    },
+    {
+      title: "StructuraAI",
+      description:
+        "Built a document intelligence pipeline that extracts structured metadata and schema definitions from large I/B/E/S financial documentation PDFs.",
+      highlights: [
+        "Parsed large financial documentation PDFs and extracted table layouts, field names, formats, and metadata.",
+        "Generated structured JSON schema outputs for downstream analytics and data engineering workflows.",
+        "Automated document-to-data conversion for financial reference documentation."
+      ],
+      stack: ["Python", "OpenAI API", "PyMuPDF", "JSON Schema", "Document Intelligence"],
+      github: "https://github.com/78himanshu/StructuraAI_5.git"
+    },
+    {
+      title: "ProtocolMind-RAG",
+      description:
+        "Built a RAG-ready knowledge base from networking RFC documents using semantic chunking, token-aware processing, and OpenAI embeddings.",
+      highlights: [
+        "Downloaded and processed official networking RFC documents including WebSocket, TLS, and HTTP specifications.",
+        "Implemented token-aware chunking and embedding generation to create a local retrieval-ready knowledge base.",
+        "Stored chunks, metadata, and vector embeddings for downstream semantic search and RAG workflows."
+      ],
+      stack: ["Python", "OpenAI Embeddings", "RAG", "Vector Search", "Tiktoken", "NumPy"],
+      github: "https://github.com/78himanshu/ProtocolMind-RAG.git"
+    },
+    {
+      title: "PyTutor-RAG",
+      description:
+        "Built a Python documentation RAG system that retrieves relevant chunks from official Python docs and answers questions using semantic similarity search.",
+      highlights: [
+        "Downloaded official Python tutorial pages and extracted clean text using BeautifulSoup.",
+        "Implemented token-based chunking, OpenAI embeddings, and local vector storage using NumPy.",
+        "Built semantic retrieval logic to send grounded context into the OpenAI Responses API."
+      ],
+      stack: ["Python", "OpenAI API", "BeautifulSoup", "RAG", "Embeddings", "NumPy"],
+      github: "https://github.com/78himanshu/PyTutor-RAG.git"
+    },
     {
       title: "VectorSearch RAG (MongoDB)",
       description:
@@ -211,7 +354,6 @@ export const profile = {
 
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Experience", href: "/experience" },
   { label: "Projects", href: "/projects" },
   { label: "Education", href: "/education" },
