@@ -114,6 +114,114 @@ export const profile = {
   ],
   projects: [
     {
+      title: "AgenticRAG",
+      description:
+        "Built an agentic RAG system using OpenAI function calling, local vector retrieval, and multiple retrieval tools to answer Python programming questions with grounded context.",
+      highlights: [
+        "Implemented an agentic workflow where the model selects retrieval tools before generating a final answer.",
+        "Built a local vector knowledge base from Python documentation using token-based chunking and OpenAI embeddings.",
+        "Designed multi-tool retrieval logic combining semantic search, documentation lookup, and context-focused retrieval."
+      ],
+      stack: ["Python", "OpenAI Function Calling", "RAG", "Vector Search", "Embeddings", "Tiktoken"],
+      github: "https://github.com/78himanshu/AgenticRAG.git"
+    },
+    {
+      title: "TicketSense-AI",
+      description:
+        "Built a LangChain + ChromaDB ticket classification system comparing OpenAI embeddings and Hugging Face EmbeddingGemma-300M across zero-shot, KNN, and few-shot strategies.",
+      highlights: [
+        "Created parallel Chroma vector stores using OpenAI embeddings and local Hugging Face EmbeddingGemma-300M embeddings.",
+        "Implemented zero-shot, KNN, and few-shot classification workflows for support ticket categorization.",
+        "Evaluated classification performance using precision, recall, F1-score, and classification reports."
+      ],
+      stack: ["Python", "LangChain", "ChromaDB", "Hugging Face", "OpenAI", "Scikit-learn"],
+      github: "https://github.com/78himanshu/TicketSense-AI.git"
+    },
+    {
+      title: "KaikoData-Agent",
+      description:
+        "Built an agentic market data downloader that converts natural-language trading data requests into Kaiko Market Data API CSV/JSON downloads.",
+      highlights: [
+        "Used OpenAI function calling to convert natural-language market data requests into structured API parameters.",
+        "Integrated Kaiko Market Data API endpoints for OHLCV aggregation data and tick-level trade data.",
+        "Exported downloaded market data into JSON and CSV files for quantitative analysis workflows."
+      ],
+      stack: ["Python", "OpenAI Function Calling", "Kaiko API", "Requests", "CSV", "JSON"],
+      github: "https://github.com/78himanshu/KaikoData-Agent.git"
+    },
+    {
+      title: "MarketMCP-Agent",
+      description:
+        "Implemented an MCP-powered financial data assistant using FastMCP and Kaiko Reference Data APIs to answer questions about exchanges, instruments, and market data availability.",
+      highlights: [
+        "Built a FastMCP server that exposes Kaiko Reference Data API endpoints as agent-usable tools.",
+        "Implemented an AI agent that queries MCP tools to answer natural-language financial data availability questions.",
+        "Designed the workflow for autonomous trading data discovery and market metadata lookup."
+      ],
+      stack: ["Python", "FastMCP", "MCP", "OpenAI", "Kaiko API", "Requests"],
+      github: "https://github.com/78himanshu/MarketMCP-Agent.git"
+    },
+    {
+      title: "DocRouteAI",
+      description:
+        "Built an LLM-powered file routing pipeline that classifies PDFs, CSVs, text files, and Python scripts, then routes them to extraction, summarization, copying, or execution workflows.",
+      highlights: [
+        "Used OpenAI tool calling to classify incoming files and select the correct processing action.",
+        "Implemented PDF table extraction, LSEG document summarization, CSV copying, and Python script execution logging.",
+        "Designed deterministic validation checks around LLM routing decisions for safer document automation."
+      ],
+      stack: ["Python", "OpenAI Tool Calling", "PyMuPDF", "PyPDF2", "Document AI", "CSV"],
+      github: "https://github.com/78himanshu/DocRouteAI.git"
+    },
+    {
+      title: "LocalDocForge",
+      description:
+        "Built a local LLM document extraction pipeline using an OpenAI-compatible inference server to convert I/B/E/S PDF tables into structured CSV outputs.",
+      highlights: [
+        "Used local inference through an OpenAI-compatible API endpoint without relying on the OpenAI Python SDK.",
+        "Extracted PDF table text with PyMuPDF and converted financial documentation layouts into structured CSV records.",
+        "Designed a privacy-conscious local AI workflow for financial document intelligence and schema extraction."
+      ],
+      stack: ["Python", "Local LLM", "OpenAI-Compatible API", "PyMuPDF", "Requests", "CSV"],
+      github: "https://github.com/78himanshu/LocalDocForge.git"
+    },
+    {
+      title: "StructuraAI",
+      description:
+        "Built a document intelligence pipeline that extracts structured metadata and schema definitions from large I/B/E/S financial documentation PDFs.",
+      highlights: [
+        "Parsed large financial documentation PDFs and extracted table layouts, field names, formats, and metadata.",
+        "Generated structured JSON schema outputs for downstream analytics and data engineering workflows.",
+        "Automated document-to-data conversion for financial reference documentation."
+      ],
+      stack: ["Python", "OpenAI API", "PyMuPDF", "JSON Schema", "Document Intelligence"],
+      github: "https://github.com/78himanshu/StructuraAI_5.git"
+    },
+    {
+      title: "ProtocolMind-RAG",
+      description:
+        "Built a RAG-ready knowledge base from networking RFC documents using semantic chunking, token-aware processing, and OpenAI embeddings.",
+      highlights: [
+        "Downloaded and processed official networking RFC documents including WebSocket, TLS, and HTTP specifications.",
+        "Implemented token-aware chunking and embedding generation to create a local retrieval-ready knowledge base.",
+        "Stored chunks, metadata, and vector embeddings for downstream semantic search and RAG workflows."
+      ],
+      stack: ["Python", "OpenAI Embeddings", "RAG", "Vector Search", "Tiktoken", "NumPy"],
+      github: "https://github.com/78himanshu/ProtocolMind-RAG.git"
+    },
+    {
+      title: "PyTutor-RAG",
+      description:
+        "Built a Python documentation RAG system that retrieves relevant chunks from official Python docs and answers questions using semantic similarity search.",
+      highlights: [
+        "Downloaded official Python tutorial pages and extracted clean text using BeautifulSoup.",
+        "Implemented token-based chunking, OpenAI embeddings, and local vector storage using NumPy.",
+        "Built semantic retrieval logic to send grounded context into the OpenAI Responses API."
+      ],
+      stack: ["Python", "OpenAI API", "BeautifulSoup", "RAG", "Embeddings", "NumPy"],
+      github: "https://github.com/78himanshu/PyTutor-RAG.git"
+    },
+    {
       title: "VectorSearch RAG (MongoDB)",
       description:
         "Built an end-to-end RAG retrieval pipeline: chunked PDFs, generated local sentence-transformer embeddings, stored vectors + metadata in MongoDB Atlas, and queried top-k matches via MongoDB Vector Search.",
