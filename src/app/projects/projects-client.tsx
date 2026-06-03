@@ -7,6 +7,7 @@ import Badge from "@/components/badge"
 import type { Project } from "@/data/profile"
 import { profile } from "@/data/profile"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ProjectsClient() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
@@ -92,6 +93,18 @@ export default function ProjectsClient() {
               </button>
             </div>
 
+            {selectedProject.image ? (
+              <div className="relative mt-6 h-[420px] w-full overflow-hidden rounded-2xl border border-slate-200/70 bg-slate-950/95 dark:border-slate-800/70">
+                <Image
+                  src={selectedProject.image}
+                  alt={`${selectedProject.title} preview`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-contain p-3"
+                />
+              </div>
+            ) : null}
+
             <p className="mt-4 text-sm text-muted sm:text-base">
               {selectedProject.description}
             </p>
@@ -129,6 +142,13 @@ export default function ProjectsClient() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <Image
+                      src="/icons/github-placeholder.png"
+                      alt=""
+                      width={18}
+                      height={18}
+                      className="object-contain"
+                    />
                     View on GitHub
                   </a>
                 </div>

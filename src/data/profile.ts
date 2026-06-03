@@ -4,8 +4,8 @@ export type Project = {
   highlights?: string[];
   stack: string[];
   github?: string;
+  image?: string;
 };
-
 export const profile = {
   name: "Himanshu Paithane",
   title: "Data Scientist & Data Engineer",
@@ -150,6 +150,7 @@ export const profile = {
   projects: [
     {
       title: "AgenticRAG",
+      image: "/project-images/agentic-rag.png",
       description:
         "Built an agentic RAG system using OpenAI function calling, local vector retrieval, and multiple retrieval tools to answer Python programming questions with grounded context.",
       highlights: [
@@ -162,6 +163,7 @@ export const profile = {
     },
     {
       title: "TicketSense-AI",
+      image: "/project-images/ticketsense-ai.png",
       description:
         "Built a LangChain + ChromaDB ticket classification system comparing OpenAI embeddings and Hugging Face EmbeddingGemma-300M across zero-shot, KNN, and few-shot strategies.",
       highlights: [
@@ -174,6 +176,7 @@ export const profile = {
     },
     {
       title: "KaikoData-Agent",
+      image: "/project-images/kaiko-data-agent.png",
       description:
         "Built an agentic market data downloader that converts natural-language trading data requests into Kaiko Market Data API CSV/JSON downloads.",
       highlights: [
@@ -186,6 +189,7 @@ export const profile = {
     },
     {
       title: "MarketMCP-Agent",
+      image: "/project-images/market-mcp-agent.png",
       description:
         "Implemented an MCP-powered financial data assistant using FastMCP and Kaiko Reference Data APIs to answer questions about exchanges, instruments, and market data availability.",
       highlights: [
@@ -198,6 +202,7 @@ export const profile = {
     },
     {
       title: "DocRouteAI",
+      image: "/project-images/docroute-ai.png",
       description:
         "Built an LLM-powered file routing pipeline that classifies PDFs, CSVs, text files, and Python scripts, then routes them to extraction, summarization, copying, or execution workflows.",
       highlights: [
@@ -210,6 +215,7 @@ export const profile = {
     },
     {
       title: "LocalDocForge",
+      image: "/project-images/localdocforge.png",
       description:
         "Built a local LLM document extraction pipeline using an OpenAI-compatible inference server to convert I/B/E/S PDF tables into structured CSV outputs.",
       highlights: [
@@ -222,6 +228,7 @@ export const profile = {
     },
     {
       title: "StructuraAI",
+      image: "/project-images/structuraai.png",
       description:
         "Built a document intelligence pipeline that extracts structured metadata and schema definitions from large I/B/E/S financial documentation PDFs.",
       highlights: [
@@ -234,6 +241,7 @@ export const profile = {
     },
     {
       title: "ProtocolMind-RAG",
+      image: "/project-images/protocolmind-rag.png",
       description:
         "Built a RAG-ready knowledge base from networking RFC documents using semantic chunking, token-aware processing, and OpenAI embeddings.",
       highlights: [
@@ -246,6 +254,7 @@ export const profile = {
     },
     {
       title: "PyTutor-RAG",
+      image: "/project-images/pytutor-rag.png",
       description:
         "Built a Python documentation RAG system that retrieves relevant chunks from official Python docs and answers questions using semantic similarity search.",
       highlights: [
@@ -258,6 +267,7 @@ export const profile = {
     },
     {
       title: "VectorSearch RAG (MongoDB)",
+      image: "/project-images/vectorsearch-rag-mongodb.png",
       description:
         "Built an end-to-end RAG retrieval pipeline: chunked PDFs, generated local sentence-transformer embeddings, stored vectors + metadata in MongoDB Atlas, and queried top-k matches via MongoDB Vector Search.",
       highlights: [
@@ -277,6 +287,7 @@ export const profile = {
     },
     {
       title: "Multimodal Document Parsing Pipeline",
+      image: "/project-images/multimodal-document-parsing.png",
       description:
         "Built an LLM-based PDF table extraction pipeline using the OpenAI Responses API (vision) to produce structured records with JSON schema + Pydantic validation and export clean CSVs with repeatability checks.",
       highlights: [
@@ -290,6 +301,7 @@ export const profile = {
     },
     {
       title: "AlertVision (Drowsiness Detection)",
+      image: "/project-images/alertvision.png",
       description:
         "Fine-tuned YOLO for high-accuracy face/eye/head-position detection and used OpenCV for real-time video inference to identify drowsiness in safety-critical scenarios.",
       highlights: [
@@ -302,6 +314,7 @@ export const profile = {
     },
     {
       title: "FindMySquad (Full-Stack Platform)",
+      image: "/project-images/findmysquad.png",
       description:
         "Developed a full-stack web platform for hosting/joining games, finding gym buddies, and esports tournaments with real-time chat, reminders, maps, and engagement systems (karma, achievements, ratings).",
       highlights: [
@@ -323,6 +336,7 @@ export const profile = {
     },
     {
       title: "YOLO + OpenCV Road Signs Detection",
+      image: "/project-images/road-signs-detection.png",
       description:
         "Built a real-time road sign detection pipeline using YOLOv5 + OpenCV with a custom Pascal VOC → YOLO dataset workflow, reproducible training config, and deployed best weights for live inference.",
       highlights: [
@@ -337,6 +351,7 @@ export const profile = {
     },
     {
       title: "CNN Human Activity Recognition (UCI HAR)",
+      image: "/project-images/cnn-human-activity-recognition.png",
       description:
         "Built a 1D-CNN time-series classifier for smartphone accelerometer/gyroscope windows across 6 activities; implemented full preprocessing and achieved 93.7% test accuracy with robust evaluation.",
       highlights: [
