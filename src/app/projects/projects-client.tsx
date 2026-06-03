@@ -137,7 +137,7 @@ export default function ProjectsClient() {
               {selectedProject.github ? (
                 <div>
                   <a
-                    className="inline-flex items-center gap-2 rounded-full border border-slate-200/70 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-900 dark:border-slate-800/70 dark:text-slate-200 dark:hover:border-slate-600 dark:hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
