@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { profile } from "@/data/profile";
+import { Analytics } from "@vercel/analytics/next";
 
 const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
