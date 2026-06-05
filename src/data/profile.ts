@@ -9,7 +9,7 @@ export type Project = {
 export const profile = {
   name: "Himanshu Paithane",
   title: "Data Scientist & Data Engineer",
-  email: "hpaithan@stevens.edu",
+  email: "paithanehimanshu@gmail.com",
   location: "New York City Metropolitan Area",
   summary:
   "I build data and AI systems that turn messy, high-volume information into reliable pipelines, measurable insights, and retrieval-powered applications.",
