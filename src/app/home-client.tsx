@@ -194,7 +194,7 @@ export default function HomeClient() {
               <button
                 key={project.title}
                 type="button"
-                className="w-full text-left transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 dark:focus-visible:ring-offset-slate-950"
+                className="group w-full cursor-pointer text-left transition duration-300 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 dark:focus-visible:ring-offset-slate-950"
                 onClick={() => setSelectedProject(project)}
               >
                 <ProjectCard {...project} />
