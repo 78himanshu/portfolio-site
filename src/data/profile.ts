@@ -149,7 +149,7 @@ export const profile = {
   ],
   projects: [
     {
-      title: "AgenticRAG",
+      title: "TutorAgent-RAG",
       image: "/project-images/agentic-rag.png",
       description:
         "Built an agentic RAG system using OpenAI function calling, local vector retrieval, and multiple retrieval tools to answer Python programming questions with grounded context.",
@@ -159,7 +159,7 @@ export const profile = {
         "Designed multi-tool retrieval logic combining semantic search, documentation lookup, and context-focused retrieval."
       ],
       stack: ["Python", "OpenAI Function Calling", "RAG", "Vector Search", "Embeddings", "Tiktoken"],
-      github: "https://github.com/78himanshu/AgenticRAG.git"
+      github: "https://github.com/78himanshu/TutorAgent-RAG"
     },
     {
       title: "TicketSense-AI",
