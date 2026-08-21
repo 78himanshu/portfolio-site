@@ -369,9 +369,9 @@ export const profile = {
 };
 
 export const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Experience", href: "/experience" },
-  { label: "Projects", href: "/projects" },
-  { label: "Education", href: "/education" },
-  { label: "Contact", href: "/contact" }
+  { label: "Home", href: "#home" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Education", href: "#education" },
+  { label: "Contact", href: "#contact" }
 ];

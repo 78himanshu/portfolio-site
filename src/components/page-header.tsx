@@ -6,13 +6,13 @@ export default function PageHeader({
   subtitle: string;
 }) {
   return (
-    <div className="mb-10">
+    <div className="mb-10 max-w-3xl">
       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
         Portfolio
       </p>
-      <h1 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+      <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
         {title}
-      </h1>
+      </h2>
       <p className="mt-3 max-w-2xl text-muted">{subtitle}</p>
     </div>
   );

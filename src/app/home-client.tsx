@@ -8,6 +8,10 @@ import ProjectCard from "@/components/project-card";
 import Badge from "@/components/badge";
 import type { Project } from "@/data/profile";
 import { profile } from "@/data/profile";
+import ExperienceSection from "@/components/sections/experience-section";
+import ProjectsSection from "@/components/sections/projects-section";
+import EducationSection from "@/components/sections/education-section";
+import ContactSection from "@/components/sections/contact-section";
 
 export default function HomeClient() {
   const featuredProjects = profile.projects.slice(0, 3);
@@ -38,7 +42,7 @@ export default function HomeClient() {
 
   return (
     <div>
-      <section className="section-padding">
+      <section id="home" className="section-shell hero-section scroll-mt-24">
         <div className="container-base grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-6">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
@@ -60,21 +64,21 @@ export default function HomeClient() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/projects"
-                className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+                href="#projects"
+                className="button-primary"
               >
                 View Projects
               </Link>
               <Link
                 href={`mailto:${profile.email}`}
-                className="rounded-full border border-slate-200/70 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-900 dark:border-slate-800/70 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-600"
+                className="button-secondary bg-white dark:bg-slate-900"
               >
                 Email Me
               </Link>
               <button
                 type="button"
                 onClick={() => setIsResumeOpen(true)}
-                className="rounded-full border border-slate-200/70 px-6 py-3 text-sm font-semibold text-slate-600 transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-900 dark:border-slate-800/70 dark:text-slate-300 dark:hover:border-slate-600 dark:hover:text-white"
+                className="button-secondary"
               >
                 View Resume
               </button>
@@ -102,7 +106,7 @@ export default function HomeClient() {
         </div>
       </section>
 
-      <section className="section-padding pt-0">
+      <section id="skills" className="section-shell scroll-mt-24">
 
         <div className="container-base space-y-10">
 
@@ -154,7 +158,7 @@ export default function HomeClient() {
 
       </section>
 
-      <section className="section-padding">
+      <section className="section-shell section-tint">
         <div className="container-base space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold">Impact Highlights</h2>
@@ -174,7 +178,9 @@ export default function HomeClient() {
         </div>
       </section>
 
-      <section className="section-padding">
+      <ExperienceSection />
+
+      <section className="section-shell">
         <div className="container-base space-y-10">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
@@ -182,7 +188,7 @@ export default function HomeClient() {
               <p className="text-muted">Placeholder work samples to be customized.</p>
             </div>
             <Link
-              href="/projects"
+                href="#projects"
               className="text-sm font-semibold text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
             >
               View all projects →
@@ -203,6 +209,10 @@ export default function HomeClient() {
           </div>
         </div>
       </section>
+
+      <ProjectsSection />
+      <EducationSection />
+      <ContactSection />
 
       {selectedProject ? (
         <div
