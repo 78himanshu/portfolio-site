@@ -8,14 +8,14 @@ export type Project = {
 };
 export const profile = {
   name: "Himanshu Paithane",
-  title: "Data Scientist & Data Engineer",
+  title: "Data/Software Engineer & Data Scientist",
   email: "paithanehimanshu@gmail.com",
   location: "San Francisco Bay Area",
   summary:
   "I build data and AI systems that turn messy, high-volume information into reliable pipelines, measurable insights, and retrieval-powered applications.",
 
   aboutLong:
-  "I build end-to-end data and AI systems that combine production-ready data engineering with applied machine learning, retrieval, and LLM-powered workflows. My work spans PySpark pipelines, data validation frameworks, NLP-driven entity resolution, RAG systems, vector search, agentic AI, MCP tools, and financial document intelligence.\n\nI like taking ambiguous problems, defining the right metrics, and shipping systems that are reliable, measurable, and easy for teams to trust. Recently, I’ve been focused on agentic RAG workflows, OpenAI function calling, ChromaDB/LangChain retrieval pipelines, Kaiko market data agents, local LLM document extraction, and scalable analytics workflows across Databricks, BigQuery, and Power BI.\n\nI’m especially interested in building AI/data systems that connect reliable data infrastructure with intelligent applications — systems that can retrieve, reason, validate, and support real decision-making. Outside of work, I enjoy kayaking on the Hudson, playing tennis when the weather is nice, and joining amateur soccer tournaments.",
+  "I've built end-to-end data and AI systems that combine production-ready data engineering with applied machine learning, retrieval, and LLM-powered workflows. My work spans PySpark pipelines, data validation frameworks, NLP-driven entity resolution, RAG systems, vector search, agentic AI, MCP tools, and financial document intelligence.\n\nI like taking ambiguous problems, defining the right metrics, and shipping systems that are reliable, measurable, and easy for teams to trust. Recently, I’ve been focused on agentic RAG workflows, OpenAI function calling, ChromaDB/LangChain retrieval pipelines, Kaiko market data agents, local LLM document extraction, and scalable analytics workflows across Databricks, BigQuery, and Power BI.\n\nI’m especially interested in building AI/data systems that connect reliable data infrastructure with intelligent applications — systems that can retrieve, reason, validate, and support real decision-making. Outside of work, I enjoy kayaking, playing tennis and participating amateur soccer tournaments.",
   photo: "/profile-placeholder.png",
   resumeUrl: "/resume.pdf",
   socials: {
