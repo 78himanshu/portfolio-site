@@ -77,10 +77,18 @@ export const profile = {
   },
   experience: [
     {
+      company: "FiPet",
+      logo: "/company-logos/fipet-placeholder.png",
+      role: "Software Engineer",
+      dates: "Aug 2026 – Present",
+      bullets: [
+        "Just started..."      ]
+    },
+    {
       company: "PANASONIC NORTH AMERICA",
       logo: "/company-logos/panasonic-placeholder.png",
       role: "Data Engineer - ML",
-      dates: "May 2025 – Present",
+      dates: "May 2025 – May 2026",
       bullets: [
         "Developed and deployed a Databricks analytics pipeline to transform and reconcile 300,000+ customer records using an NLP and fuzzy matching algorithm to improve customer segmentation, data quality, and the reliability of downstream analytics and business decision-making.",
         "Built a scalable SQL and PySpark workflow to automate data validation, schema checks, ETL reconciliation and data quality monitoring while improving pipeline reliability and ensuring trusted datasets for analytics products, dashboards and machine learning models.",
