@@ -31,7 +31,7 @@ export default function ContactSection() {
         </div>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Link href={`mailto:${profile.email}`} className="button-primary">Email Me</Link>
-          <p className="text-sm text-muted">I usually respond within 1-2 days.</p>
+          <p className="text-sm text-muted">I usually respond within a day.</p>
         </div>
       </div>
     </section>
