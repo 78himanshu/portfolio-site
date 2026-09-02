@@ -10,7 +10,7 @@ export const profile = {
   name: "Himanshu Paithane",
   title: "Data Scientist & Data Engineer",
   email: "paithanehimanshu@gmail.com",
-  location: "New York City Metropolitan Area",
+  location: "San Francisco Bay Area",
   summary:
   "I build data and AI systems that turn messy, high-volume information into reliable pipelines, measurable insights, and retrieval-powered applications.",
 
