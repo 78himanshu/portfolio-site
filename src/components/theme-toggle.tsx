@@ -19,7 +19,7 @@ export default function ThemeToggle({ className }: { className?: string }) {
         )}
         aria-label="Toggle theme"
       >
-        Theme
+        Light Mode
       </button>
     );
   }
